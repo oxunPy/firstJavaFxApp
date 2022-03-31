@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uz.akfa.firstjavafxapp.controller.EditConfirmController">
+    <top>
+        <HBox prefHeight="100.0" prefWidth="200.0" spacing="59.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#onBackBtnClick" prefWidth="50.0" text="⬅" textFill="#412424">
+                    <font>
+                        <Font name="Century Gothic Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Text fill="#c0a32b" strokeType="OUTSIDE" strokeWidth="0.0" text="Username: " textAlignment="JUSTIFY">
+                    <font>
+                        <Font name="Century Gothic" size="39.0" />
+                    </font>
+                </Text>
+                <Text fx:id="username" fill="#e22121" strokeType="OUTSIDE" strokeWidth="0.0">
+                    <font>
+                        <Font name="Century Gothic" size="44.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="89.0" prefWidth="600.0" spacing="85.0">
+                    <children>
+                        <Label text="Login">
+                            <font>
+                                <Font name="Century Gothic" size="30.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="login" prefHeight="34.0" prefWidth="194.0" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="27.0" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+                    <children>
+                        <Label text="Password">
+                            <font>
+                                <Font name="Century Gothic" size="30.0" />
+                            </font>
+                        </Label>
+                        <PasswordField fx:id="password" prefHeight="37.0" prefWidth="195.0" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </center>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="82.0" text="Submit" onAction="#onSubmitBtnClick" />
+         </children>
+         <padding>
+            <Insets bottom="50.0" right="100.0" />
+         </padding>
+      </HBox>
+   </bottom>
+</BorderPane>

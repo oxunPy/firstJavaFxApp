@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uz.akfa.firstjavafxapp.controller.EditController">
+   <top>
+      <HBox prefHeight="50.0" prefWidth="200.0" spacing="40.0" style="-fx-background-color: #fff111;" BorderPane.alignment="CENTER">
+         <children>
+            <Button minWidth="-Infinity" mnemonicParsing="false" onAction="#onBackBtnClick" prefWidth="50.0" text="⬅" textFill="#412424">
+               <font>
+                  <Font name="Century Gothic Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label text="Update/add">
+               <font>
+                  <Font name="Century Gothic" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="username" text="Username" textAlignment="JUSTIFY" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Century Gothic" size="29.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Id">
+                     <font>
+                        <Font name="Century Gothic" size="26.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="id"/>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="25.0" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="FirstName">
+                     <font>
+                        <Font name="Century Gothic" size="26.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="firstName"/>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="lastName">
+                     <font>
+                        <Font name="Century Gothic" size="26.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lastName"/>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="Role">
+                     <font>
+                        <Font name="Century Gothic" size="26.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="role"/>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" ellipsisString="" mnemonicParsing="false"
+                    prefHeight="42.0" prefWidth="120.0" text="submit" textAlignment="JUSTIFY"
+                    textFill="#c72c2c" underline="true" onAction="#onSubmitBtnClick">
+               <graphic>
+                  <Separator opacity="0.0" prefWidth="200.0" />
+               </graphic>
+               <font>
+                  <Font name="Century Gothic" size="21.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

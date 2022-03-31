@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uz.akfa.firstjavafxapp.controller.LoginController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="39.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/static/akfa.png" />
+               </image>
+            </ImageView>
+            <Label text="Login">
+               <font>
+                  <Font name="Century Gothic" size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="username:">
+                     <font>
+                        <Font name="Century Gothic" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfLogin" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="password:">
+                     <font>
+                        <Font name="Century Gothic" size="22.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="pfPassword" />
+                  <Button mnemonicParsing="false" text="submit" fx:id="btnSubmit" onAction="#onBtnSubmitClick">
+                     <HBox.margin>
+                        <Insets top="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Century Gothic" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
